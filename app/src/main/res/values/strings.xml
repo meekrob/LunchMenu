@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">LunchList Final Exam (David King)</string>
+    <string name="name_label">Name</string>
+    <string name="address_label">Address</string>
+    <!-- labels for the Restaurant type -->
+    <string name="takeout_label">Take-Out</string>
+    <string name="dinein_label">Dine-In</string>
+    <string name="delivery_label">Delivery</string>
+    <string name="delete_button_label">Delete</string>
+    <string name="save_button_label">Save</string>
+    <string name="view_note_label">View note for selection</string>
+    <string name="exit_label">Exit</string>
+    <string name="icon_description">Restaurant Type Icon</string>
+    <string name="cancel_button_label">Cancel</string>
+    <string name="about_title">About</string>
+    <string name="note_label">Note</string>
+    <string name="app_settings_label">Settings</string>
+    <string name="help_menu_item_label">Help</string>
+    <string name="add_settings_label">Add</string>
+    <string name="add_toast_format_string">Added Restaurant \'%s\'</string>
+    <string name="update_toast_format_string">Updated Restaurant \'%s\'</string>
+</resources>

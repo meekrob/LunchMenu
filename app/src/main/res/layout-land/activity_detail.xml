@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1"
+    android:layout_alignParentBottom="true"
+    >
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/name_label"
+            android:id="@+id/name_label"
+            android:layout_column="0"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_entry"
+            android:layout_column="1"
+            android:layout_weight="5" />
+
+    </TableRow> <!-- name -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/address_label"
+            android:id="@+id/address_label"
+            android:layout_column="0"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/address_entry"
+            android:layout_column="1"
+            android:layout_weight="5" />
+    </TableRow> <!-- address -->
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delivery_type"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#dee1e9"
+        android:weightSum="1">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/takeout_label"
+            android:id="@+id/takeout_choice"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dinein_label"
+            android:id="@+id/dinein_choice"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delivery_label"
+            android:id="@+id/delivery_choice"
+            android:checked="false" />
+
+    </RadioGroup> <!-- take-out/dine-in/delivery -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/note_label"
+            android:id="@+id/note_label"
+            android:layout_column="0"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/note_entry"
+            android:layout_column="1"
+            android:layout_weight="5"
+            android:inputType="textMultiLine"
+            android:scrollHorizontally="false"
+            android:lines="2"
+            android:gravity="top"
+            android:maxWidth="200sp"
+            android:maxLines="2"
+            android:singleLine="false" />
+    </TableRow> <!-- note -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/save_button_label"
+            android:id="@+id/save_button"
+            android:layout_column="0"
+            android:layout_weight="1"
+            android:background="@color/button_material_dark"
+            android:textColor="#ffffff" />
+    </TableRow> <!-- Save button -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/cancel_button_label"
+            android:id="@+id/cancel_button"
+            android:layout_column="0"
+            android:layout_weight="1"
+            android:background="#6e6877"
+            android:textColor="#ffffff" />
+    </TableRow> <!-- cancel button -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/delete_button_label"
+            android:id="@+id/delete_button"
+            android:layout_column="0"
+            android:layout_weight="1"
+            android:background="#903141"
+            android:textColor="#ffffff" />
+    </TableRow>
+</TableLayout>
